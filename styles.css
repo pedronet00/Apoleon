@@ -1,0 +1,212 @@
+/**Typeo CSS Start**/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+
+
+.container {
+	max-width: 1200px;
+	width: 100%;
+	padding: 0px 15px;
+	margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+/**Typeo CSS End**/
+.faq-item {
+	width: 100%;
+	margin: 7px 0px;
+}
+
+.faq-item .faq-label {
+	position: relative;
+	width: 100%;
+	background-color: #ebebeb;
+	padding: 14px 50px 12px 20px;
+	cursor: pointer;
+	font-size: 18px;
+	color: #000;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+}
+
+.faq-item .faq-label i {
+	width: 46px;
+	height: 100%;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	background-color: #000;
+}
+
+.faq-item .faq-label i:before {
+	content: '';
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	margin: auto;
+	width: 20px;
+	height: 2px;
+	background-color: #fff;
+}
+
+.faq-item .faq-label i:after {
+	content: '';
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	margin: auto;
+	width: 2px;
+	height: 20px;
+	background-color: #fff;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+}
+
+.faq-item .faq-item-show .faq-label i:after {
+	opacity: 0;
+}
+
+.faq-cont {
+	border: #ebebeb 1px solid;
+	background-color: #fff;
+	transition: 0.3s all;
+	overflow: hidden;
+	padding: 0 20px;
+	height: 0px;
+}
+
+.faq-item .faq-item-show+.faq-cont {
+	display: block;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	overflow: auto;
+	height: auto;
+}
+
+.faq-cont p {
+	margin: 0px 0 20px 0;
+}
+
+.faq-cont p:last-child {
+	margin-bottom: 0px;
+}
+
+@media(max-width:767px) {
+	.faq-item .faq-label {
+		padding: 10px 50px 8px 15px;
+		cursor: pointer;
+		font-size: 16px;
+		line-height: 1.2;
+	}
+
+	.faq-cont {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+  .como-fazemos{
+    display: none;
+  }
+
+  .mensagem_inicial{
+    display: none;
+  }
+
+  .botao_acao{
+    border: none;
+    width: 70%;
+  }
+
+}
+
+  .como-fazemos {
+      position: relative;
+      width: 100%;
+      height: 700px;
+      background-color: #04243D;
+    }
+    .como-fazemos ul {
+      list-style: none;
+      color: white;
+      font-size: 40px;
+      text-align: left;
+      padding: 5%;
+      width: 50%;
+    }
+    .como-fazemos ul li {
+      cursor: pointer;
+    }
+    .carde {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 35%;
+      height: 50%;
+      overflow: auto;
+      background-color: white;
+      display: none;
+      margin-top: 10%;
+      margin-right: 20%;
+      border-radius: 10px;
+    }
+
+    .active-servicos {
+      background-color: white;
+      color: #04243D!important;
+      padding: 0.5%;
+    }
+
+
+
+    .zoom-animation {
+      position: relative;
+      width: 100%;
+      height: 750px;
+      overflow: hidden;
+    }
+
+    .zoom-animation::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url(banner.jpg);
+      background-size: cover;
+      animation: zoom 30s infinite;
+      z-index: -1; /* Define uma camada inferior para a imagem de fundo */
+    }
+
+    @keyframes zoom {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+.gerenciar_marketing:hover{
+    background-color: #204563!important;
+}
+
+.nav-link:hover{
+    background-color: white;
+    color: #04243D!important;
+    transition: 0.5s ease-in-out;
+}
+
+.botao_acao:hover{
+    background-color: #5dd4bf!important;
+    transition: .5s ease-in;
+}

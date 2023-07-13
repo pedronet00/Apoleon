@@ -7,169 +7,9 @@
     <link rel="shortcut icon" href="apoleon_logo.png" type="image/x-icon" />
     <title>Apoleon | Landing Pages & Branding</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-      
-
-
-
-/**Typeo CSS Start**/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
-
-
-
-.container {
-	max-width: 1200px;
-	width: 100%;
-	padding: 0px 15px;
-	margin: auto;
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
-
-/**Typeo CSS End**/
-.faq-item {
-	width: 100%;
-	margin: 7px 0px;
-}
-
-.faq-item .faq-label {
-	position: relative;
-	width: 100%;
-	background-color: #ebebeb;
-	padding: 14px 50px 12px 20px;
-	cursor: pointer;
-	font-size: 18px;
-	color: #000;
-	user-select: none;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-}
-
-.faq-item .faq-label i {
-	width: 46px;
-	height: 100%;
-	position: absolute;
-	right: 0px;
-	top: 0px;
-	background-color: #000;
-}
-
-.faq-item .faq-label i:before {
-	content: '';
-	position: absolute;
-	left: 0px;
-	right: 0px;
-	top: 0px;
-	bottom: 0px;
-	margin: auto;
-	width: 20px;
-	height: 2px;
-	background-color: #fff;
-}
-
-.faq-item .faq-label i:after {
-	content: '';
-	position: absolute;
-	left: 0px;
-	right: 0px;
-	top: 0px;
-	bottom: 0px;
-	margin: auto;
-	width: 2px;
-	height: 20px;
-	background-color: #fff;
-	transition: 0.5s all;
-	-webkit-transition: 0.5s all;
-}
-
-.faq-item .faq-item-show .faq-label i:after {
-	opacity: 0;
-}
-
-.faq-cont {
-	border: #ebebeb 1px solid;
-	background-color: #fff;
-	transition: 0.3s all;
-	overflow: hidden;
-	padding: 0 20px;
-	height: 0px;
-}
-
-.faq-item .faq-item-show+.faq-cont {
-	display: block;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	overflow: auto;
-	height: auto;
-}
-
-.faq-cont p {
-	margin: 0px 0 20px 0;
-}
-
-.faq-cont p:last-child {
-	margin-bottom: 0px;
-}
-
-@media(max-width:767px) {
-	.faq-item .faq-label {
-		padding: 10px 50px 8px 15px;
-		cursor: pointer;
-		font-size: 16px;
-		line-height: 1.2;
-	}
-
-	.faq-cont {
-		padding-left: 15px;
-		padding-right: 15px;
-	}
-
-  .como-fazemos{
-    display: none;
-  }
-
-}
-
-  .como-fazemos {
-      position: relative;
-      width: 100%;
-      height: 700px;
-      background-color: #04243D;
-    }
-    .como-fazemos ul {
-      list-style: none;
-      color: white;
-      font-size: 40px;
-      text-align: left;
-      padding: 5%;
-      width: 50%;
-    }
-    .como-fazemos ul li {
-      cursor: pointer;
-    }
-    .carde {
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 35%;
-      height: 50%;
-      overflow: auto;
-      background-color: white;
-      display: none;
-      margin-top: 10%;
-      margin-right: 20%;
-      border-radius: 10px;
-    }
-
-    .active-servicos {
-      background-color: white;
-      color: #04243D!important;
-      padding: 0.5%;
-    }
-
-
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #04243D!important;">
         <a class="navbar-brand" href="#"><img src="apoleon_logo.png" style="width: 70px; height: 70px;"></a>
@@ -180,16 +20,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent" style="float: right;">
           <ul class="navbar-nav mr-auto" >
             <li class="nav-item active">
-              <a class="nav-link" href="#" style="color: white!important;">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#" style="color: white;">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#" style="color: white!important;">Serviços</a>
+              <a class="nav-link" href="#" style="color: white">Serviços</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#" style="color: white!important;">Landing Pages</a>
+              <a class="nav-link" href="#" style="color: white">Landing Pages</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#" style="color: white!important;">Planos</a>
+              <a class="nav-link" href="#" style="color: white">Planos</a>
             </li>
             
           </ul>
@@ -197,13 +37,12 @@
         </div>
       </nav>
 
-      <div class="first" style="width: 100%; max-height: 1200px; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url(banner.jpg);">
-        <br/><br/><br/><br/><br/><br/>
-        <h1 style="text-align: center; color: white; font-size: 64px;">A hora de dar um <i style="font-weight: bold;">up</i><br/> no seu trabalho <span style="padding: 0.2%; border: 1px solid #19A48A; line-height: 2; color: #04243D; background-color: white; font-weight: bold;">chegou</span>.</h1>
-        <p style="color: white; text-align: center; font-size: 22px;">Receba uma página totalmente personalizada, Marketing configurado e assertivo, <br/>converta seus visitantes e torne seu negócio gigante.</p>
-        <br/><br/>
-        <button style="background-color: #19A48A; color: #04243D; padding: 1%; border: none; font-size: 22px; border-radius: 20px; margin: auto; display: block;">Quero <span style="font-weight: bold;">desenvolver</span> meu negócio</button>
-        <br/><br/>  
+      <div class="zoom-animation">
+        <div class="content">
+          <h1 style="text-align: center; color: white; font-size: 64px; margin-top: 5%;">A hora de dar um <i style="font-weight: bold;">up</i><br/> no seu trabalho <span style="padding: 0.2%; line-height: 2; color: #04243D; background-color: white; font-weight: bold;">chegou</span>.</h1>
+          <p style="color: white; text-align: center; font-size: 28px;" class="mensagem_inicial">Receba uma página totalmente personalizada, Marketing configurado e assertivo, <br/>converta seus visitantes e torne seu negócio gigante.</p>
+          <button class="botao_acao" style="background-color: #19A48A; color: #04243D; padding: 1%; border: none; font-size: 22px; border-radius: 20px; margin: auto; display: block;">Quero <span style="font-weight: bold;">desenvolver</span> meu negócio</button>
+        </div>
       </div>
     
 
@@ -282,7 +121,7 @@
 
         <br/><br/>
         <div style="width: 100%; display: flex; justify-content: center;">
-          <a href="#" style="background-color: #04243D; color: white; padding: 1%; text-align: center;">Quero gerenciar meu Marketing</a>
+          <a href="#" class="gerenciar_marketing" style="background-color: #04243D; color: white; padding: 1%; text-align: center; text-decoration: none;">Quero gerenciar meu Marketing</a>
       </div>
       
       </div>
