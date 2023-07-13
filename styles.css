@@ -1,7 +1,9 @@
 /**Typeo CSS Start**/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
 
-
+body{
+    background-color: black;
+}
 
 .container {
 	max-width: 1200px;
@@ -150,7 +152,7 @@
       height: 50%;
       overflow: auto;
       background-color: white;
-      display: none;
+      
       margin-top: 10%;
       margin-right: 20%;
       border-radius: 10px;
@@ -165,36 +167,38 @@
 
 
     .zoom-animation {
-      position: relative;
-      width: 100%;
-      height: 750px;
-      overflow: hidden;
-    }
-
-    .zoom-animation::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-image: url(banner.jpg);
-      background-size: cover;
-      animation: zoom 30s infinite;
-      z-index: -1; /* Define uma camada inferior para a imagem de fundo */
-    }
-
-    @keyframes zoom {
-      0% {
-        transform: scale(1);
+        position: relative;
+        width: 100%;
+        height: 750px;
+        overflow-x: hidden; /* Esconde o conteúdo que excede a largura da div */
+        overflow-y: hidden; /* Esconde o conteúdo que excede a altura da div */
       }
-      50% {
-        transform: scale(1.2);
+      
+      .zoom-animation::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(AA.png);
+        background-size: cover; /* Ajusta a imagem para cobrir a div */
+        z-index: -1; /* Define uma camada inferior para a imagem de fundo */
+        animation: zoom 45s infinite; /* Aplica a animação de zoom */
       }
-      100% {
-        transform: scale(1);
+      
+      @keyframes zoom {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.2);
+        }
+        100% {
+          transform: scale(1);
+        }
       }
-    }
+      
 
 .gerenciar_marketing:hover{
     background-color: #204563!important;
@@ -210,3 +214,15 @@
     background-color: #5dd4bf!important;
     transition: .5s ease-in;
 }
+
+.elemento {
+    width: 70%;
+    height: 140px;
+    margin: auto;
+    background: radial-gradient( 51.39% 511.66% at 47.68% -217.91%, #ff9900 0%, #e50914 17.27%, #0e1b4f 79.44%, #000413 100% );
+    box-shadow: 0px -8px 25px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    background-position: center top;
+    background-size: 100% 200%;
+    background-repeat: no-repeat;
+  }
